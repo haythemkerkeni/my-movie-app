@@ -1,0 +1,116 @@
+.search{
+display: flex;
+}
+.menu{
+padding: 30px 51px;
+display: flex;
+}
+.inputsearch {
+    width: 500px;
+    height: 52px;
+}
+.buttonsearch{
+ width: 100px;
+ height: 58px;
+}
+.flip-card , .movie ,.bymovie{
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner , .bestmovie , .topbestmovie{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.movie:hover .bestmovie{
+  transform: rotateY(180deg);
+}
+.bymovie:hover .topbestmovie{
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.movie-action, .title{
+  position: absolute;
+   width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.movie-drame, .onetitle{
+  position: absolute;
+   width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front , .movie-action ,.movie-drame{
+  background-color: #bbbbbb54;;
+  color: black;
+  z-index: 2;
+}
+.flip-card-front img{
+  width: 215px;
+    height: 290px;
+}
+    
+.flip-card-back , .title ,.onetitle{
+  background-color: #064253d9;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+.movies{
+display: flex;
+    padding: 0 50px;
+
+}
+.gold{
+color: rgb(240,230,140);
+}
+.add{
+    border: 2px solid white;
+    width: 240px;
+    background-color: #80808042;
+}
+.button{
+    padding: 20px 30px;
+    margin: 112px 86px;
+}
+.header{
+      background-image: url(movie.jpg);
+height: 1000px;
+}
+
+.button{
+  font-size: x-large;
+    background-color: #c5c0c0;
+}
+.starRating{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:center; 
+}
+.star{
+  color: gold;
+
+
+}
+.whitestar{
+color: white;
+}
