@@ -144,6 +144,9 @@ class Search extends Component {
                 && (movie.rating >= this.state.rate)
         )
     }
+    getname (name){
+        console.log(name)
+    }
     render() {
         return (
             <div className='header'>
